@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 50px; /* menambahkan jarak 15px antara elemen */
+      }
+    </style>
+    <script src="bab9_1.js" defer></script>
+    <script src="bab9_2.js" defer></script>
+    <script src="bab9_3.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <label for="biner"><h3>Konversi bilangan biner ke desimal</h3></label>
+      <input type="number" name="biner" id="biner" maxlength="8" minlength="8"/>
+      <button onclick="binaryToDecimal()">Hitung</button>
+      <p id="outputbiner"></p>
+    </div>
+
+    <div>
+      <label for="desimal"><h3>Konversi bilangan desimal ke biner</h3></label>
+      <input type="number" name="desimal" id="desimal" />
+      <button onclick="decimalToBinary()">Hitung</button>
+      <p id="output"></p>
+    </div>
+
+    <div>
+        <label for="desimalNegatif"><h3>Konversi bilangan desimal negatif ke biner</h3></label>
+        <input type="number" name="desimalNegatif" id="desimalNegatif" />
+        <button onclick="decimalToBinaryNegative()">Hitung</button>
+        <p id="outputBinaryNegative"></p>
+      </div>
+  </body>
+</html>
